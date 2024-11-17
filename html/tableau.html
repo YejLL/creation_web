@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia;
+            text-align: center;
+            background-color: bisque;
+        }
+
+        h1 {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 60%;
+            margin: 40px auto; /* 위 아래 마진을 40으로 설정, 좌우는 자동으로*/
+            border-collapse: collapse; /* 테이블 디자인시 많이 사용됌. 테이블 셀의 경계를 어떻게 처리할지 결정. 
+            각 셸 사이의 겹치는 경계가 없어지고, 더 깔끔한 테이블을 만들수 있음 */
+            border-radius: 10px;
+            overflow: hidden; /* 내용이 경계를 벗어날때 어떻게 처리할지 결정. 넘친 부분 숨기기*/
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: gainsboro;
+        }
+
+        a {
+            display: inline-block; /* 인라인 박스처럼 행동하면서도 블록 수준의 특징. 다른 인라인 요소와 함꼐 한줄에 표시.
+            요소의 너비와 높이를 지정할수 있음, 요소 사이에 줄바꿈 발생 */
+            padding: 8px 16px;
+            text-decoration: none;
+            color: black;
+            border-radius: 5px;
+            transition: background-color 0.3s; /* 요소의 배경색이 변경될때 자연스럽게 변화 */
+        }
+
+        a:hover {
+            background-color: plum;
+        }
+
+        article {
+            width: 60%;
+            margin: 40px auto;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        ul {
+            list-style-type: none; /* 마커 표시 없음 */
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        li:hover {
+            background-color: plum;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffe5dc;
+            color: black;
+            font-size: 11px;
+            padding: 10px;
+            height: 70px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tableau de photos</h1>
+    </header>
+    <main>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Photo</th>
+                    <th>Site</th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="images/paris.jpg">Paris</a>
+                    </td>
+                    <td>
+                        <a href="paris.html">explication</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="images/shibuya.jpg">Tokyo</a>
+                    </td>
+                    <td>
+                        <a href="tokyo.html">explication</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="images/seoul.jpg">Seoul</a>
+                    </td>
+                    <td>
+                        <a href="seoul.html">explication</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <article>
+            <h2><b>Les points à vérifier avant le voyage</b></h2>
+            <ul>
+                <li>Vérification de <span style="color : red"> validité du passport</span></li>
+                <li>Vérification du visa</li>
+                <li>Préparation de l'échange de devises locales</li>
+                <li>Vérification de la nécessité d'un adaptateur électrique</li>
+                <li>Vérification de l'assurance voyage</li>
+                <li>Vérification de la disponibilité du Wi-Fi</li>
+                <li>Confirmation des vols, hébergements, moyens de transport</li>
+                <li>Connaître les contacts d'urgence pour votre destination de voyage</li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 Travel Blog. All rights reserved.</p>
+        <p style="font-weight: bold;">Contact: contact@travelblog.com</p>
+    </footer>
+</body>
+
+</html>
